@@ -1,0 +1,124 @@
+:root {
+    --primary-orange: #fd6f00;
+    --primary-orange-hover: #e06200;
+    --soft-bg: #fff5ed;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e1e1e;
+}
+
+.text-orange {
+    color: var(--primary-orange) !important;
+}
+
+.btn-orange {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+}
+
+.btn-orange:hover {
+    background-color: var(--primary-orange-hover);
+    border-color: var(--primary-orange-hover);
+}
+
+/* Logo Badge */
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary-orange);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Foto Profil */
+.profile-wrapper {
+    width: 280px;
+    height: 280px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-orange);
+    background-color: var(--soft-bg);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Kartu Biodata */
+.bio-card {
+    border: 1px solid #eeeeee;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bio-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: var(--soft-bg);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Tombol Filter Kategori */
+.filter-btn {
+    background-color: #f8f9fa;
+    color: #333333;
+    border: 1px solid #dee2e6;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--soft-bg);
+    border-color: var(--primary-orange);
+    color: var(--primary-orange);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: #ffffff;
+}
+
+/* Kartu Produk E-Commerce */
+.product-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #eeeeee;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.product-img-box {
+    background-color: var(--soft-bg);
+}
+
+.product-img-box img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .profile-wrapper {
+        width: 220px;
+        height: 220px;
+    }
+}
